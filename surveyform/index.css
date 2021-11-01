@@ -1,0 +1,115 @@
+body {
+  font-family: "Roboto Mono", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-image: url("./images/grey-background.jpg");
+}
+
+#header {
+  background-color: rgba(95, 95, 95, 0.9);
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+#header h1,
+#header p {
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+}
+
+#survey-form {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  /* text-align: center; */
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+#name-enter,
+#email-enter,
+#num-enter,
+#selection,
+#select-one,
+#select-many,
+#comment-section,
+#submit-btn {
+  background-color: rgb(240, 240, 240);
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.84);
+}
+
+#name-enter #name-label,
+#email-enter #email-label,
+#num-enter #number-label,
+.select-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.inputfield {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  width: 100%;
+  font-size: 15px;
+}
+
+#comment {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+}
+
+.myButton {
+  background-color: #4e4e4e;
+  border-radius: 9px;
+  border: 1px solid #4e4e4e;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 16px 38px;
+  margin: auto;
+}
+
+.myButton:hover {
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (max-width: 400px) {
+  #name-enter,
+  #email-enter,
+  #num-enter,
+  #selection,
+  #select-one,
+  #select-many,
+  #comment-section,
+  #submit-btn {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}

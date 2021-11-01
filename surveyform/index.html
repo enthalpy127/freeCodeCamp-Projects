@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Student Survey Form</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">IT Student Survey Form</h1>
+      <p id="description">
+        The purpose of this survery is to collect our student information which
+        is to be used in upcoming final exam.
+      </p>
+    </div>
+    <div id="main">
+      <form id="survey-form">
+        <div id="name-enter">
+          <label for="name" id="name-label">Name</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="inputfield"
+            placeholder="enter name"
+            required
+          />
+        </div>
+
+        <div id="email-enter">
+          <label for="email" id="email-label">Email</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="inputfield"
+            placeholder="enter email"
+            required
+          />
+        </div>
+
+        <div id="num-enter">
+          <label for="number" id="number-label">Roll Number</label>
+          <br />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="inputfield"
+            min="0"
+            max="1000"
+            placeholder="enter a number"
+            style="width: 120px"
+          />
+        </div>
+
+        <div id="selection">
+          <label for="dropdown" class="select-label">Select Class</label>
+          <br />
+          <select name="something" id="dropdown">
+            <option value="a">Class A</option>
+            <option value="b">Class B</option>
+            <option value="c">Class C</option>
+          </select>
+        </div>
+
+        <div id="select-one">
+          <label class="select-label">Select current year</label>
+          <br />
+          <input type="radio" name="radio" id="one" value="first" />
+          <label for="one">First Year</label>
+          <br />
+          <input type="radio" name="radio" id="two" value="second" />
+          <label for="two">Second Year</label>
+          <br />
+          <input type="radio" name="radio" id="three" value="thrid" />
+          <label for="three">Third Year</label>
+        </div>
+
+        <div id="select-many">
+          <label class="select-label">Select current projects</label>
+          <br />
+          <input type="checkbox" name="one" id="one" value="front-end" />
+          <label for="one">Front-end Project</label>
+          <br />
+          <input type="checkbox" name="two" id="two" value="back-end" />
+          <label for="two">Back-end Project</label>
+          <br />
+          <input type="checkbox" name="three" id="three" value="mobile" />
+          <label for="three">Mobile App Project</label>
+          <br />
+          <input type="checkbox" name="four" id="four" value="game" />
+          <label for="four">Game Project</label>
+        </div>
+
+        <div id="comment-section">
+          <label class="select-label"
+            >Leave any comments you would like to send</label
+          >
+          <br />
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <button id="submit" class="myButton">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
