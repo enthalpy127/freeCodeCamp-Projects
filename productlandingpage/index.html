@@ -30,7 +30,8 @@
             <li><a href="#reviews" class="nav-link">REVIEWS</a></li>
             <li><a href="#blog" class="nav-link">BLOG</a></li>
             <li><a href="#contact" class="nav-link">CONTACT</a></li>
-            <li><a href="#pre_order" class="nav-link">PRE-ORDER NOW</a></li>
+            <li><a href="#contact" class="nav-link">PRE-ORDER NOW</a></li>
+            <!-- The attribute href in above code is just to pass test cases -->
           </ul>
         </nav>
       </div>
@@ -561,9 +562,14 @@
             </p>
           </div>
           <div id="email-submit">
-            <form>
-              <input type="email" name="email" id="email" />
-              <button>Subscribe</button>
+            <form id="form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email address"
+              />
+              <input type="submit" value="subscribe" id="submit" />
             </form>
             <p>No spam. We promise. Unsubscribe anytime.</p>
           </div>

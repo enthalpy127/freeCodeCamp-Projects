@@ -13,6 +13,13 @@ body {
   box-sizing: border-box;
 }
 
+#header {
+  position: sticky;
+  top: 0;
+  background-color: #c9c4c4;
+  z-index: 100;
+}
+
 #header > div {
   width: 90%;
   margin: auto;
@@ -56,7 +63,7 @@ body {
 
 #header > div > #nav-bar > ul > li > a {
   text-decoration: none;
-  color: grey;
+  color: white;
 }
 
 #header > div > #nav-bar > ul > li:last-child > a {
@@ -586,22 +593,22 @@ main > #features > #f-section-3 > #f-section-3-container img {
   font-size: 1em;
 }
 
-#email-submit form button {
-  flex: 1 1 30px;
-  background-color: rgb(40, 247, 247);
+#email-submit form input[type="submit"] {
+  flex: 1 1 128px;
+  background-color: rgb(40, 247, 247) !important;
   border: none;
   outline: none;
   color: white;
   font-size: 1em;
 }
 
-#email-submit form button:hover {
+#email-submit form input[type="submit"]:hover {
   background-color: rgb(32, 209, 209);
   cursor: pointer;
 }
 
 #email-submit form input,
-#email-submit form button {
+#email-submit form input[type="submit"] {
   height: 50px;
 }
 
