@@ -1,0 +1,132 @@
+body {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#top-header {
+  background-color: rgb(142, 183, 219);
+  padding: 1rem;
+  position: relative;
+  color: white;
+  position: absolute;
+  display: none;
+}
+
+#top-header h1 {
+  margin: 0;
+}
+
+#toggle-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+#toggle-btn:hover {
+  cursor: pointer;
+}
+
+.line {
+  height: 4px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+#main-doc {
+  position: relative;
+}
+
+#navbar {
+  background-color: rgb(187, 225, 255);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+#navbar header {
+  padding: 1rem;
+  background-color: rgb(43, 212, 218);
+  color: white;
+}
+
+#navbar a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#navbar a:hover {
+  background-color: aquamarine;
+}
+
+#content {
+  margin-left: 200px;
+  padding: 1rem;
+}
+
+.main-section {
+  margin-bottom: 1.2em;
+}
+
+.main-section:last-child {
+  margin-bottom: 0;
+}
+
+.main-section header {
+  font-size: 2em;
+}
+
+.main-section p {
+  font-size: 1.3em;
+}
+
+code {
+  background-color: rgb(216, 210, 210);
+  display: block;
+  padding: 1rem;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 700px) {
+  #top-header {
+    position: static;
+    display: block;
+    font-size: 0.8em;
+  }
+
+  #navbar {
+    position: static;
+    display: none;
+    width: 100%;
+  }
+
+  #navbar.active {
+    display: block;
+  }
+
+  #navbar header {
+    display: none;
+  }
+
+  #content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
