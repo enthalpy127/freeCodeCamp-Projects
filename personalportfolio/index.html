@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Zen+Kurenaido"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav id="header-container">
+        <a href="#"><img src="images/logo-small.png" alt="logo" id="logo" /></a>
+        <button id="toggle-btn">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <ul id="navbar">
+          <div id="first-item">
+            <li><a href="#home" data-link>Home</a></li>
+            <li><a href="#whoami" data-link>WhoAmI?</a></li>
+            <li><a href="#projects" data-link>Projects</a></li>
+            <li><a href="#skill-section" data-link>Skills</a></li>
+          </div>
+          <div id="last-item">
+            <div>
+              <p>Contact Me</p>
+              <form>
+                <input type="email" name="email" id="email" />
+                <input type="submit" value="send" />
+              </form>
+              <a href="#"><img src="./images/github.png" alt="github" /></a>
+              <a href="#"><img src="./images/gmail_icon.png" alt="gmail" /></a>
+              <a href="#"
+                ><img id="fb" src="./images/facebook.png" alt="facebook"
+              /></a>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div id="welcome-section">
+          <h1 class="up-bottom">Hi, Welcome!</h1>
+          <h2 class="left-right">
+            I am <span style="color: red">Peter</span>.
+          </h2>
+          <h2 class="left-right">A Front-End Web Developer</h2>
+          <p class="right-left" style="width: fit-content">
+            Who loves building
+            <span style="color: red">beautiful</span> User Interfaces.
+          </p>
+          <div id="btns">
+            <button id="see-more" class="bottom-up">See More</button>
+          </div>
+        </div>
+      </section>
+      <section id="whoami">
+        <div id="whoami-container" class="who-container">
+          <h2>So who actually am I?</h2>
+          <p>
+            I am a <span style="color: red">Front-End</span>
+            Developer. And I also love JavaScript because it is everywhere.
+            That's why, I am learning JavaScript to become a Full-Stack
+            Developer. The technologies I am using now are
+            <span style="color: red">HTML</span>,
+            <span style="color: red">CSS</span>,
+            <span style="color: red">Vanilla JavaScript</span> and
+            <span style="color: red">a few JS Libraries</span> for things like
+            animations. They are the heart of the Front-End Development.
+          </p>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>My Done Projects</h2>
+        <p id="project-description">
+          Below are <span style="color: red">HTML/CSS</span> projects and
+          <span style="color: red">JavaScript</span> projects. Click to any of
+          these to see the project source code on
+          <span style="color: red">GitHub</span>.
+        </p>
+        <div id="proj-grid-box" class="project-tile">
+          <div id="box-1" class="grid-item">
+            <a href="#">
+              <img src="./images/project-1.png" alt="tribute page" />
+              <p>Tribute Page</p>
+            </a>
+          </div>
+          <div id="box-2" class="grid-item">
+            <a href="#">
+              <img src="./images/project-2.png" alt="survey form" />
+              <p>Survey Form Page</p>
+            </a>
+          </div>
+          <div id="box-3" class="grid-item">
+            <a href="#">
+              <img src="./images/project-3.png" alt="product landing page" />
+              <p>Product Landing Page</p>
+            </a>
+          </div>
+          <div id="box-4" class="grid-item">
+            <a href="#">
+              <img src="./images/project-4.png" alt="technical documentation" />
+              <p>Technical Documentation Page</p>
+            </a>
+          </div>
+          <div id="box-5" class="grid-item">
+            <a href="#">
+              <img src="./images/project-5.png" alt="fb-login page" />
+              <p>Facebook Login Page</p>
+            </a>
+          </div>
+          <div id="box-6" class="grid-item">
+            <a href="#">
+              <img src="./images/project-6.png" alt="countdown" />
+              <p>New Year Countdown</p>
+            </a>
+          </div>
+        </div>
+        <div id="see-more-btn">
+          <button>See More</button>
+        </div>
+      </section>
+      <section id="skill-section">
+        <h2>My Skill Sets</h2>
+        <p id="skill-description">
+          Web Development is not only the one that I passionate about. I do also
+          love <span style="color: red">Game Development</span>. That's why I've
+          learnt <span style="color: red">C++</span> and other
+          <span style="color: red">Object Oriented Programming Languages</span>.
+        </p>
+        <div id="skill-box">
+          <div class="cpp skill-item">
+            <h3>C++</h3>
+            <p>
+              I started my programming career with C++. I've made Desktop apps
+              and especially Games with it. Of course, you can also see them on
+              <span style="color: red">GitHub</span>.
+            </p>
+          </div>
+          <div class="python skill-item">
+            <h3>Python</h3>
+            <p>
+              Python is the most popular language that every developer should
+              know. I used some frameworks of Python such as
+              <span style="color: red">PyAutoGUI</span> and
+              <span style="color: red">PyGame</span>. I will also learn Django.
+            </p>
+          </div>
+          <div class="c-sharp skill-item">
+            <h3>C#</h3>
+            <p>
+              With C#, making Desktop Apps is easy. I've made Games in C# with
+              the power of <span style="color: red">Unity Game Engine</span>.
+            </p>
+          </div>
+          <div class="java skill-item">
+            <h3>Java</h3>
+            <p>
+              With Java, I only made Desktop Apps. But I will use it when I
+              start to learn
+              <span style="color: red">Android Development</span>.
+            </p>
+          </div>
+          <div class="html-css skill-item">
+            <h3>HTML and CSS</h3>
+            <p>
+              I finished HTML/CSS Course on
+              <span style="color: red">w3schools</span> and
+              <span style="color: red">freeCodeCamp</span>. So I have strong
+              solid foundations. I am very confident at making website in
+              HTML/CSS from scratch.
+            </p>
+          </div>
+          <div class="javascript skill-item">
+            <h3>JavaScript</h3>
+            <p>
+              JavaScript is my favourite language. I've made many many projects
+              with it. All of the projects can be seen on
+              <span style="color: red">GitHub</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>Contact or See my work</h3>
+      <ul>
+        <li>
+          <a href="#">
+            <img
+              src="./images/facebook - Copy.png"
+              alt="facebook logo"
+              style="width: 40px; height: 39px"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#" id="profile-link" target="_blank">
+            <img
+              src="./images/github - Copy.png"
+              alt="github logo"
+              style="width: 40px; height: 39px"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./images/gmail_icon - Copy.png"
+              alt="gmail logo"
+              style="width: 40px; height: 39px"
+            />
+          </a>
+        </li>
+      </ul>
+      <div id="last-div">
+        <p>Copyright &copy; 2021. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
